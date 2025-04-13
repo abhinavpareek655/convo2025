@@ -41,7 +41,6 @@ git clone https://github.com/abhinavpareek655/convo2025.git
 3. **Configure Environment Variables:**  
    Create a `.env` file in the `backend` directory with the following:
    ```env
-   PORT=5000
    MONGODB_URI=your_mongodb_connection_string
    ```
 4. **Start the Backend Server:**
