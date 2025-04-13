@@ -1,50 +1,111 @@
-# Welcome to your Expo app 👋
+# Convo2025
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Convo2025 is a system designed for college convocations that scans the admit card QR codes of students to grant entry and prevent duplicate admissions.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **QR Code Scanning:** Reads and validates admit card QR codes.
+- **Duplicate Prevention:** Blocks re-entry using the same card.
+- **Real-Time Processing:** Provides instant feedback during entry.
 
+## Tech Stack
+
+- **Frontend:** React Native
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+
+## Prerequisites
+
+- **Node.js & npm:** Ensure they are installed.
+- **MongoDB:** Running instance (local or cloud).
+- **React Native Environment:** Configured for Android and/or iOS.
+
+## Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/abhinavpareek655/convo2025.git
+```
+
+### Backend Setup
+
+1. **Navigate to the Backend Directory:**  
+   *(Assuming the backend code is in the `backend` folder)*
+   ```bash
+   cd convo2025/backend
+   ```
+2. **Install Dependencies:**
    ```bash
    npm install
    ```
-
-2. Start the app
-
+3. **Configure Environment Variables:**  
+   Create a `.env` file in the `backend` directory with the following:
+   ```env
+   PORT=3000
+   MONGODB_URI=your_mongodb_connection_string
+   ```
+4. **Start the Backend Server:**
    ```bash
-    npx expo start
+   npm start
+   ```
+   *Alternatively:*
+   ```bash
+   node index.js
    ```
 
-In the output, you'll find options to open the app in a
+### Frontend Setup
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+1. **Navigate to the Frontend Directory:**  
+   *(Assuming the frontend code is in the `frontend` folder)*
+   ```bash
+   cd convo2025/frontend
+   ```
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Run the React Native Application:**
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+   - For Android:
+     ```bash
+     npx react-native run-android
+     ```
+   - For iOS:
+     ```bash
+     npx react-native run-ios
+     ```
 
-## Get a fresh project
+## Usage
 
-When you're ready, run:
+Once both the backend and frontend are running:
 
-```bash
-npm run reset-project
-```
+- Launch the mobile application to start scanning admit card QR codes.
+- The system validates each QR code and prevents duplicate entry by disallowing reuse of the same QR code.
+- Check backend logs for any duplicate scan attempts or errors.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Contributing
 
-## Learn more
+Contributions are welcome. Please follow these steps:
 
-To learn more about developing your project with Expo, look at the following resources:
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request for review.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Related LinkedIn Post
 
-## Join the community
+For additional insights and updates on the project, see the related [LinkedIn post](https://www.linkedin.com/posts/abhinavpareek1_techforsecurity-reactnative-mernstack-activity-7297577397413974016-9gRb?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfolR8B6XgS_mzRHgnG_XDCs9A4n0j3Riw) by the creator.
 
-Join our community of developers creating universal apps.
+## License
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+*Include the appropriate license information here if applicable.*
+
+## Contact
+
+For further queries or feedback, please contact the repository owner.
+
+---
+
+GitHub Repository: [https://github.com/abhinavpareek655/convo2025.git](https://github.com/abhinavpareek655/convo2025.git)
