@@ -31,7 +31,6 @@ git clone https://github.com/abhinavpareek655/convo2025.git
 ### Backend Setup
 
 1. **Navigate to the Backend Directory:**  
-   *(Assuming the backend code is in the `backend` folder)*
    ```bash
    cd convo2025/backend
    ```
@@ -42,7 +41,7 @@ git clone https://github.com/abhinavpareek655/convo2025.git
 3. **Configure Environment Variables:**  
    Create a `.env` file in the `backend` directory with the following:
    ```env
-   PORT=3000
+   PORT=5000
    MONGODB_URI=your_mongodb_connection_string
    ```
 4. **Start the Backend Server:**
@@ -98,11 +97,8 @@ Contributions are welcome. Please follow these steps:
 
 For additional insights and updates on the project, see the related [LinkedIn post](https://www.linkedin.com/posts/abhinavpareek1_techforsecurity-reactnative-mernstack-activity-7297577397413974016-9gRb?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfolR8B6XgS_mzRHgnG_XDCs9A4n0j3Riw) by the creator.
 
-## License
-
-*Include the appropriate license information here if applicable.*
-
 ## Contact
+email: abhinavpareek655@gmail.com
 
 For further queries or feedback, please contact the repository owner.
 
