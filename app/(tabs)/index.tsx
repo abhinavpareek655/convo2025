@@ -5,7 +5,7 @@ import { useState } from "react"
 import { Button, StyleSheet, Text, TouchableOpacity, View, TextInput, SafeAreaView, StatusBar } from "react-native"
 import { Ionicons } from "@expo/vector-icons"
 
-const DEFAULT_SERVER = "https://7738-54-252-241-88.ngrok-free.app"
+const DEFAULT_SERVER = "https://convo-backend-gdvo.onrender.com"
 
 export default function App() {
   const [SERVER_URL, setServerURL] = useState(DEFAULT_SERVER)
