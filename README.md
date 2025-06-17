@@ -28,55 +28,7 @@ Convo2025 is a system designed for college convocations that scans the admit car
 git clone https://github.com/abhinavpareek655/convo2025.git
 ```
 
-### Backend Setup
-
-1. **Navigate to the Backend Directory:**  
-   ```bash
-   cd convo2025/backend
-   ```
-2. **Install Dependencies:**
-   ```bash
-   npm install
-   ```
-3. **Configure Environment Variables:**  
-   Create a `.env` file in the `backend` directory with the following:
-   ```env
-   MONGODB_URI=your_mongodb_connection_string
-   ```
-4. **Start the Backend Server:**
-   ```bash
-   npm start
-   ```
-   *Alternatively:*
-   ```bash
-   node index.js
-   ```
-
-### Frontend Setup
-
-1. **Navigate to the Frontend Directory:**  
-   *(Assuming the frontend code is in the `frontend` folder)*
-   ```bash
-   cd convo2025/frontend
-   ```
-2. **Install Dependencies:**
-   ```bash
-   npm install
-   ```
-3. **Run the React Native Application:**
-
-   - For Android:
-     ```bash
-     npx react-native run-android
-     ```
-   - For iOS:
-     ```bash
-     npx react-native run-ios
-     ```
-
 ## Usage
-
-Once both the backend and frontend are running:
 
 - Launch the mobile application to start scanning admit card QR codes.
 - The system validates each QR code and prevents duplicate entry by disallowing reuse of the same QR code.
